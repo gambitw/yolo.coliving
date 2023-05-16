@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navitem {
+  margin-right: 3rem;
+}
+
+.navlink {
+  color: #333;
+  font-size: x-large;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  border-bottom-width: 40%;
+  border-radius: 2px;
+  transition: color 0.2s, border-color 0.2s;
+  
+}
+
+.navlink:hover {
+  border-bottom-width: 80%;
+  border-bottom: 4px solid #ff69b4;
+  border-radius: 2px;
+  transition: color 0.4s, border-bottom-width 0.2s;
+}
+
+.active {
+  color: #ff69b4;
+  border-radius: 2px;
+  border-bottom: 4px solid #ff69b4;
+}

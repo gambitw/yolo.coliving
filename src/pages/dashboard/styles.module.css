@@ -1,0 +1,78 @@
+.addPropertyButton {
+    background-color:rgb(250, 3, 196);
+    padding: 8px 32px;
+    border-radius: 24px;
+    border: #fff;
+    color: #fff;
+    margin: 60px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: large;
+    right: 0;
+    position: fixed;
+    top: 16%;
+  }
+  .addPropertyButton:hover {
+    transform: scale(1.08);
+    background-color: #fff;
+    color: rgb(250, 3, 196);
+    border-radius: 24px;
+    border: 2px rgb(250, 3, 196);
+    font-weight: bold;
+    
+}
+.containerLista {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+
+.imoveisList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imovelItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.imovelName {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.imovelAddress {
+  margin-right: 1rem;
+}
+
+.imovelButtons {
+  display: flex;
+  flex-direction: row;
+}
+.imovelButtons button {
+  margin-right: 1rem;
+}
+
+.formButtons{
+  margin-left: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 40px;
+}
+
+.formIcons{
+ margin-left: 20px;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+ width: 40px;
+}
