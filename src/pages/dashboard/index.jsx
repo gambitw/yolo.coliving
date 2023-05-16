@@ -52,7 +52,7 @@ export default function Home() {
                 {imoveis.map((imovel) => (
                     <li key={imovel.id} className={styles.imovelItem}>
                         <div className={styles.imovelName}>
-                            <strong>{imovel.name}</strong>
+                            <strong>{imovel.nome}</strong>
                         </div>
                         <div className={styles.imovelAddress}>
                             {imovel.city} - {imovel.state}
@@ -67,8 +67,8 @@ export default function Home() {
                             Publicado em todas as listagens: {imovel.status}
                         </div>
                         <div className={styles.imovelButtons}>
-                            <FaPencilAlt   className={styles.formIcons} size={25}   />
-                            <FaTrashAlt  className={styles.formIcons}  size={25}  />
+                        <FaTrashAlt onClick={() => handleDelete(imovel.id)}  className={styles.formIcons} size={25}  />
+                        <FaPencilAlt  onClick={() => router.push(`/imoveis/${imovel.id}/editar`)} className={styles.formIcons}  size={25}   />
                         </div>
                     </li>
                 ))}
